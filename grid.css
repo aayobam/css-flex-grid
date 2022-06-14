@@ -1,0 +1,80 @@
+/* grid layout style*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+a:hover{
+    background-color: white;
+    color: blue;
+}
+
+
+main {
+   display: grid;
+   grid-template-areas:
+   'a a b'
+   'c d d'
+   'c e e'
+   'c e e'
+   ;
+    gap: 15px;
+    width: 70%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 3px;
+    padding: 1em;
+}
+
+main div{
+    padding: 2em;
+    text-align: center;
+}
+
+
+.grid-a{
+    background-color: red;
+    grid-area: a;
+    height: 20vh;
+    
+}
+
+.grid-b{
+    background-color: yellow;
+    grid-area: b;
+}
+
+.grid-c{
+    background-color: green;
+    grid-area: c;
+    height: 20vh;
+
+}
+
+.grid-d{
+    background-color: rgb(19, 88, 236);
+    grid-area: d;
+}
+
+.grid-e{
+    background-color: rgb(19, 88, 236);
+    grid-area: e;
+}
