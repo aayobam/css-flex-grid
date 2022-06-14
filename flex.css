@@ -4,10 +4,61 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #f2f2f2;
+    font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #f2f2f2;
+    font-family: Big Shoulders Display;
+    font-weight: 700px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+p{
+    color: #ffffff;
+    font-family: Lexend Deca;
+    font-weight: 400px;
+    padding: 0px 70px 0px 0px;
+    padding-bottom: 60px;
+}
+
+button{
+    background-color: #f2f2f2;
+    padding: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+main {
+    margin: auto;
+    width: 60%;
+    min-height: 80vh;
     display: flex;
-    place-items: center;
-    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 80%;
+    padding: 1rem;
+}
+
+.flex-a{
+    background-color: #e29c34;
+}
+
+.flex-b{
+    background-color: #006970;
+}
+
+.flex-c{
+    background-color: #004241;
 }
 
 a{
@@ -24,83 +75,4 @@ a{
 a:hover{
     background-color: white;
     color: blue;
-}
-
-/* flex layout  style*/
-
-main {
-    margin: auto;
-    width: 60%;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.719);
-    gap: 10px;
-    padding: 1em;
-    border-radius: 5px;
-}
-
-.top-flex{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 30vh;
-    gap: 10px;
-}
-
-.flex-a{
-    background-color: red;
-}
-
-.flex-b{
-    background-color: green;
-}
-
-.flex-c{
-    background-color: yellow;
-}
-
-.flex-d{
-    background-color: rgb(19, 88, 236);
-}
-
-.flex-e{
-    background-color: rgb(19, 88, 236);
-}
-
-.top-flex .flex-a{
-    padding: 2em;
-    width: 70%;
-}
-
-.top-flex .flex-b{
-    width: 30%;
-    pad: 2em;
-}
-
-.bottom-flex{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 30vh;
-    gap: 10px;
-}
-
-.bottom-flex2{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    height: 30vh;
-    gap: 10px;
-}
-
-.bottom-flex .flex-c{
-    width: 30%;
-}
-
-.flex-d, .flex-e{
-    width: 100%;
-    height: 30vh;
 }
