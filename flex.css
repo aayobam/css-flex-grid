@@ -29,7 +29,7 @@ main div{
 
 h1,h2,h3{
     color: #f2f2f2;
-    font-family: Big Shoulders Display;
+    font-family: "Big Shoulders Display";
     font-weight: 700px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -37,8 +37,8 @@ h1,h2,h3{
 
 p{
     color: #ffffff;
-    font-family: Lexend Deca;
-    font-weight: 400px;
+    font-family: "Lexend Deca";
+    font-weight: 700px;
     padding: 0px 50px 0px 0px;
     padding-bottom: 50px;
 }
@@ -115,8 +115,51 @@ a:hover{
 
 
 @media only screen and (max-width: 1115px){
-    main div{
-        width: 100%;
+    main {
+        width: 70%;
     }
-    
+}
+
+@media only screen and (max-width: 1107px){
+    main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 783px){
+    main {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div {
+        border-radius: 10px;
+        margin: 10px;
+        min-height: 20vh;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    main div {
+        border-radius: 10px;
+        margin: 10px;
+        min-height: 20vh;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    main div {
+        border-radius: 10px;
+        margin: 10px;
+        min-height: 0vh;
+        width: 65%;
+    }
 }
