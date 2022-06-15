@@ -8,32 +8,10 @@ body {
     font-size: 15px;
 }
 
-h1,h2,h3,h4,h5,h6{
-    color: #f2f2f2;
-    font-family: Big Shoulders Display;
-    font-weight: 700px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-p{
-    color: #ffffff;
-    font-family: Lexend Deca;
-    font-weight: 400px;
-    padding: 0px 70px 0px 0px;
-    padding-bottom: 60px;
-}
-
-button{
-    background-color: #f2f2f2;
-    padding: 5px 0px 5px 0px;
-    border-radius: 10px;
-}
-
 main {
     margin: auto;
-    width: 60%;
-    min-height: 80vh;
+    width: 55%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,12 +23,31 @@ main div{
     display: flex;
     flex-direction: column;
     min-height: 50vh;
-    width: 80%;
-    padding: 1rem;
+    width: 30%;
+    padding: 2rem;
 }
+
+h1,h2,h3{
+    color: #f2f2f2;
+    font-family: Big Shoulders Display;
+    font-weight: 700px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+p{
+    color: #ffffff;
+    font-family: Lexend Deca;
+    font-weight: 400px;
+    padding: 0px 50px 0px 0px;
+    padding-bottom: 50px;
+}
+
 
 .flex-a{
     background-color: #e29c34;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .flex-b{
@@ -59,9 +56,48 @@ main div{
 
 .flex-c{
     background-color: #004241;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 a{
+    background-color: #f2f2f2;
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+    width: 55%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.flex-a a{
+    color:#e29c34;
+}
+
+.flex-a a:hover{
+    color:#f2f2f2;
+    background-color:#004241;
+}
+
+.flex-b a{
+    color:#006970;
+}
+
+.flex-b a:hover{
+    color:#004241;
+    background-color: #e29c34;
+}
+
+.flex-c a{
+    color:#004241;
+}
+
+.flex-c a:hover{
+    color:#f2f2f2;
+    background-color: #006970;
+}
+
+.grid-link{
     text-decoration: none;
     background-color: blue;
     color: white;
@@ -75,4 +111,12 @@ a{
 a:hover{
     background-color: white;
     color: blue;
+}
+
+
+@media only screen and (max-width: 1115px){
+    main div{
+        width: 100%;
+    }
+    
 }
